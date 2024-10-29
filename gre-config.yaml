@@ -1,7 +1,7 @@
 network:
   version: 2
   ethernets:
-    eth0:
+    ens160:
       addresses:
         - 10.0.0.10/24
       routes:
