@@ -8,8 +8,7 @@ GATEWAY=`ip route list | grep default | cut -d' ' -f 3` && \
 echo "/ip address add address=$ADDRESS interface=[/interface ethernet find where name=ether1]
 /ip route add gateway=$GATEWAY
 /ip service disable telnet
-/user set 0 name=root password=TedezDev
- " > /mnt/rw/autorun.scr && \
+/user set 0 name=root password=TedezDev" > /mnt/rw/autorun.scr && \
 umount /mnt && \
 echo u > /proc/sysrq-trigger && \
 dd if=chr.img bs=1024 of=/dev/vda && \
