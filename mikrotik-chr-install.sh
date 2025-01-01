@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "install routeros on linux ubuntu 20"
+echo "install routeros on linux ubuntu 20";
 wget https://download.mikrotik.com/routeros/6.44.6/chr-6.44.6.img.zip -O chr.img.zip  && \
 gunzip -c chr.img.zip > chr.img  && \
 mount -o loop,offset=512 chr.img /mnt && \
